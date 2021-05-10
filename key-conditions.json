@@ -1,0 +1,10 @@
+{
+    "Genre": {
+        "AttributeValueList": [
+            {   
+                "S": "Games"
+            }   
+        ],  
+        "ComparisonOperator": "EQ"
+    }
+}
