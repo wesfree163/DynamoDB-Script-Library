@@ -1,3 +1,4 @@
+//AWS AUTH (first ~10 lines)
 var AWS = require("aws-sdk");
 let awsConfig = {
     
@@ -8,8 +9,11 @@ let docClient = new AWS.DynamoDB.DocumentClient();
 
 const prompt = require('prompt-sync')();
 
+//FUNCTION TO REMOVE DATA FROM TABLE
 let remove = function () {
 
+    //REQUESTS A NUMBER, SUCCESS REMOVES DATA FROM TABEL, ERROR THROWS ERROR
+    //SHUTS DOWN ON FIRST INPUT ERROR
     var id_val = prompt("Delete num: ");
 
     var params = {
