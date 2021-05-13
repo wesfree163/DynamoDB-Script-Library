@@ -1,3 +1,4 @@
+//FIRST DECLARE FILESYSTEM AND GET ALL NECESSARY AUTHENTICATION
 const fs = require('fs');
 var AWS = require("aws-sdk");
 let awsConfig = {
@@ -9,6 +10,7 @@ let docClient = new AWS.DynamoDB.DocumentClient();
 
 const prompt = require('prompt-sync')();
 
+//FUNCTION TO READ DATA FROM DYNAMODB
 let fetchOneByKey = function () {
 
     var id_val = prompt("Read num: ");
