@@ -6,7 +6,7 @@ The information is formatted as JSON. It can be hard coded as shown in this samp
 
 Remember to get the account credentials from your AWS account and run `npm install` 😃
 
-You can run the files individually with `node 'filename'` or reference their code. They are made for reusability.
+You can run the files individually with `node 'filename'` or reference their code through other program files. They are made for reusability.
 
 ♩ ♪ ♫ ♬ ♭
 Happy Hackin'!
